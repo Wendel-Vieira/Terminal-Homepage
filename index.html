@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/animations.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>TERMINAL</title>
+    <script src="https://unpkg.com/rot-js@2.1.1/dist/rot.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "sound": "./sound/index.js",
+                "util/": "./util/"
+            }
+        }
+    </script>
+</head>
+<body class="theme-green fullscreen">
+    <div id="monitor" class="off">
+        <div id="screen">
+            <div id="crt">
+                <div class="scanline"></div>
+                <div class="terminal"></div>
+            </div>
+        </div>
+        <div id="power"></div>
+    </div>
+
+    <script src="util/power.js" type="module"></script>
+</body>
+</html>
